@@ -19,22 +19,36 @@ body{
     background:#f7fafc;
 }
 
+/* TOP BRAND */
+.top-brand{
+    background:#075b9a;
+    color:white;
+    text-align:center;
+    padding:18px 15px;
+}
+
+.top-brand h1{
+    margin:0;
+    font-size:30px;
+    letter-spacing:2px;
+}
+
+.top-brand p{
+    margin:6px 0 0;
+    font-size:15px;
+}
+
 /* HEADER */
 header{
-    background:#fff;
-    min-height:85px;
-    padding:10px 7%;
+    background:#ffffff;
+    min-height:78px;
+    padding:8px 7%;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:25px;
     border-bottom:3px solid #159447;
     box-shadow:0 3px 15px rgba(0,0,0,.08);
-}
-
-.logo-area{
-    display:flex;
-    align-items:center;
 }
 
 .logo-area img{
@@ -59,33 +73,33 @@ nav a:hover{
     color:#159447;
 }
 
-/* HERO WITH REAL SHIP */
+/* HERO */
 .hero{
     position:relative;
-    min-height:620px;
+    min-height:650px;
     display:flex;
     align-items:center;
     padding:90px 7%;
     overflow:hidden;
+    color:white;
 
     background-image:
         linear-gradient(
             90deg,
             rgba(3,55,91,.96) 0%,
-            rgba(4,87,122,.82) 45%,
-            rgba(4,87,122,.35) 100%
+            rgba(4,87,122,.78) 45%,
+            rgba(4,87,122,.30) 100%
         ),
         url("https://commons.wikimedia.org/wiki/Special:Redirect/file/Container_ship_in_Koper_2013.jpg");
 
     background-size:cover;
     background-position:center;
-    color:white;
 }
 
 .hero-content{
     position:relative;
     z-index:2;
-    max-width:650px;
+    max-width:680px;
 }
 
 .hero-tag{
@@ -98,28 +112,27 @@ nav a:hover{
     margin-bottom:20px;
 }
 
-.hero h1{
+.hero h2{
     font-size:52px;
     line-height:1.1;
     margin:0 0 20px;
 }
 
-.hero h1 span{
+.hero h2 span{
     color:#8ee6ad;
 }
 
 .hero p{
     font-size:20px;
     line-height:1.6;
-    max-width:650px;
-    margin-bottom:25px;
+    margin:0 0 20px;
 }
 
 .btn{
     display:inline-block;
     background:#159447;
     color:white;
-    padding:15px 27px;
+    padding:15px 28px;
     border-radius:7px;
     text-decoration:none;
     font-weight:bold;
@@ -133,8 +146,34 @@ nav a:hover{
     transform:translateY(-2px);
 }
 
+/* INFO BAR */
+.info-bar{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    padding:25px 7%;
+    box-shadow:0 3px 15px rgba(0,0,0,.06);
+}
+
+.info-item{
+    text-align:center;
+    min-width:220px;
+}
+
+.info-item strong{
+    display:block;
+    color:#075b9a;
+    margin-bottom:6px;
+}
+
+.info-item span{
+    color:#667788;
+}
+
 /* SECTIONS */
-section{
+section:not(.hero){
     padding:75px 7%;
 }
 
@@ -219,8 +258,8 @@ section{
 }
 
 .about-box{
-    min-width:190px;
-    padding:20px 30px;
+    min-width:210px;
+    padding:22px 25px;
     background:#f0f8f4;
     border-radius:10px;
 }
@@ -229,6 +268,7 @@ section{
     display:block;
     font-size:25px;
     color:#159447;
+    margin-bottom:8px;
 }
 
 /* EXPORT */
@@ -262,7 +302,14 @@ section{
 }
 
 .contact p{
-    font-size:19px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.owner{
+    font-size:21px;
+    font-weight:bold;
+    color:#159447;
 }
 
 /* FOOTER */
@@ -270,7 +317,8 @@ footer{
     background:#063f68;
     color:white;
     text-align:center;
-    padding:28px 15px;
+    padding:30px 15px;
+    line-height:1.7;
 }
 
 footer strong{
@@ -278,7 +326,11 @@ footer strong{
 }
 
 /* MOBILE */
-@media(max-width:900px){
+@media(max-width:800px){
+
+    .top-brand h1{
+        font-size:23px;
+    }
 
     header{
         padding:12px 5%;
@@ -300,41 +352,61 @@ footer strong{
     }
 
     .hero{
-        min-height:680px;
+        min-height:650px;
         padding:65px 6%;
         align-items:flex-start;
-
         background-position:center;
     }
 
-    .hero h1{
-        font-size:40px;
+    .hero h2{
+        font-size:39px;
     }
 
     .hero p{
         font-size:17px;
     }
+
+    .info-bar{
+        padding:25px 5%;
+        gap:15px;
+    }
 }
 
 @media(max-width:500px){
 
-    .hero{
-        min-height:650px;
+    .top-brand h1{
+        font-size:20px;
+        letter-spacing:1px;
     }
 
-    .hero h1{
-        font-size:34px;
+    .hero{
+        min-height:620px;
+    }
+
+    .hero h2{
+        font-size:33px;
     }
 
     .card{
         width:100%;
         max-width:340px;
     }
+
+    section:not(.hero){
+        padding:60px 6%;
+    }
 }
 </style>
 </head>
 
 <body>
+
+<!-- TOP BRAND -->
+<div class="top-brand">
+    <h1>PRIME CARE INTERNATIONAL</h1>
+    <p>Used Clothing Exporter • Karachi, Pakistan</p>
+</div>
+
 
 <!-- HEADER -->
 <header>
@@ -354,7 +426,7 @@ footer strong{
 </header>
 
 
-<!-- HERO -->
+<!-- HERO WITH REAL CONTAINER SHIP -->
 <section class="hero" id="home">
 
     <div class="hero-content">
@@ -363,10 +435,10 @@ footer strong{
             KARACHI • PAKISTAN
         </div>
 
-        <h1>
+        <h2>
             Quality Used Clothing
             <span>For Global Markets</span>
-        </h1>
+        </h2>
 
         <p>
             Prime Care International supplies quality used clothing,
@@ -383,12 +455,33 @@ footer strong{
 </section>
 
 
+<!-- BUSINESS INFO -->
+<div class="info-bar">
+
+    <div class="info-item">
+        <strong>👤 Contact Person</strong>
+        <span>Asmatullah Khan</span>
+    </div>
+
+    <div class="info-item">
+        <strong>📍 Address</strong>
+        <span>Kemari Town, Hub River Road, Karachi, Pakistan</span>
+    </div>
+
+    <div class="info-item">
+        <strong>📱 WhatsApp</strong>
+        <span>03118497798</span>
+    </div>
+
+</div>
+
+
 <!-- PRODUCTS -->
 <section id="products">
 
     <div class="section-title">
         <h2>Our Products</h2>
-        <p>Reliable wholesale clothing supply for international buyers</p>
+        <p>Wholesale used clothing for international buyers</p>
     </div>
 
     <div class="cards">
@@ -397,8 +490,8 @@ footer strong{
             <div class="card-icon">👕</div>
             <h3>Used Clothing</h3>
             <p>
-                Quality second-hand garments prepared for
-                international wholesale markets.
+                Quality second-hand garments prepared
+                for international wholesale markets.
             </p>
         </div>
 
@@ -444,18 +537,18 @@ footer strong{
         <div class="about-boxes">
 
             <div class="about-box">
-                <strong>📍</strong>
-                Karachi
+                <strong>👤</strong>
+                Asmatullah Khan
             </div>
 
             <div class="about-box">
-                <strong>📦</strong>
-                Wholesale
+                <strong>📍</strong>
+                Karachi, Pakistan
             </div>
 
             <div class="about-box">
                 <strong>🌍</strong>
-                International
+                International Export
             </div>
 
         </div>
@@ -465,7 +558,7 @@ footer strong{
 </section>
 
 
-<!-- EXPORT -->
+<!-- EXPORT CTA -->
 <section class="export">
 
     <h2>Ready for International Business?</h2>
@@ -487,7 +580,14 @@ footer strong{
 
     <h2>Contact Us</h2>
 
-    <p>📍 Karachi, Pakistan</p>
+    <p class="owner">
+        Asmatullah Khan
+    </p>
+
+    <p>
+        📍 Kemari Town, Hub River Road,<br>
+        Karachi, Pakistan
+    </p>
 
     <a class="btn" href="https://wa.me/923118497798">
         WhatsApp: 03118497798
@@ -498,7 +598,7 @@ footer strong{
 
 <!-- FOOTER -->
 <footer>
-    © 2026 <strong>Prime Care International</strong> —
+    © 2026 <strong>Prime Care International</strong><br>
     Used Clothing Exporter from Karachi, Pakistan
 </footer>
 
