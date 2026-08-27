@@ -285,4 +285,624 @@ section:not(.hero){
     display:flex;
     align-items:center;
     justify-content:center;
-    background
+    background:var(--soft-green);
+    font-size:40px;
+}
+
+.card h3{
+    color:var(--blue);
+    font-size:22px;
+    margin:12px 0;
+}
+
+.card p{
+    color:var(--gray);
+    line-height:1.65;
+}
+
+
+/* ABOUT */
+
+.about{
+    background:white;
+    text-align:center;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.about p{
+    font-size:19px;
+    line-height:1.85;
+    color:#536574;
+}
+
+.about-boxes{
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.about-box{
+    min-width:220px;
+    padding:25px;
+    background:var(--soft-green);
+    border-radius:12px;
+    border-bottom:3px solid var(--green);
+}
+
+.about-box strong{
+    display:block;
+    font-size:28px;
+    color:var(--green);
+    margin-bottom:10px;
+}
+
+
+/* EXPORT */
+
+.export{
+    background:linear-gradient(
+        135deg,
+        var(--blue),
+        var(--dark-blue)
+    );
+    color:white;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.export h2{
+    font-size:38px;
+    margin-top:0;
+}
+
+.export p{
+    max-width:750px;
+    margin:15px auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+/* CONTACT */
+
+.contact{
+    background:#eef7f8;
+    text-align:center;
+}
+
+.contact h2{
+    color:var(--blue);
+    font-size:38px;
+    margin-top:0;
+}
+
+.contact p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.owner{
+    font-size:23px;
+    font-weight:bold;
+    color:var(--green);
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#063f68;
+    color:white;
+    text-align:center;
+    padding:32px 15px;
+    line-height:1.8;
+}
+
+footer strong{
+    color:var(--light-green);
+}
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    .top-brand{
+        padding:16px 12px;
+    }
+
+    .top-brand h1{
+        font-size:23px;
+    }
+
+    header{
+        padding:12px 5%;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .logo-area img{
+        height:58px;
+    }
+
+    nav{
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+
+    .hero{
+        min-height:670px;
+        padding:70px 6%;
+
+        background-position:center center;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .info-bar{
+        padding:28px 5%;
+        gap:15px;
+    }
+
+    .info-item{
+        min-width:210px;
+    }
+
+    section:not(.hero){
+        padding:65px 6%;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+}
+
+
+/* SMALL MOBILE */
+
+@media(max-width:500px){
+
+    .top-brand h1{
+        font-size:20px;
+        letter-spacing:1px;
+    }
+
+    .top-brand p{
+        font-size:13px;
+    }
+
+    .hero{
+        min-height:650px;
+        padding:55px 6%;
+        background-position:center center;
+    }
+
+    .hero h2{
+        font-size:34px;
+        line-height:1.12;
+    }
+
+    .hero p{
+        font-size:16px;
+        line-height:1.6;
+    }
+
+    .hero-tag{
+        font-size:12px;
+        padding:9px 15px;
+    }
+
+    .btn{
+        padding:14px 22px;
+        font-size:14px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .about p{
+        font-size:17px;
+    }
+
+    .export h2,
+    .contact h2{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- TOP BRAND -->
+
+<div class="top-brand">
+
+    <h1>PRIME CARE INTERNATIONAL</h1>
+
+    <p>
+        Used Clothing Exporter • Karachi, Pakistan
+    </p>
+
+</div>
+
+
+<!-- HEADER -->
+
+<header>
+
+    <div class="logo-area">
+
+        <img
+            src="PRIME%20LOGO.png"
+            alt="Prime Care International Logo"
+        >
+
+    </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            KARACHI • PAKISTAN
+        </div>
+
+
+        <h2>
+
+            Quality Used Clothing
+
+            <span>
+                For Global Markets
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Prime Care International supplies quality
+            used clothing, wholesale bales and bulk
+            garments from Karachi, Pakistan to
+            international buyers.
+
+        </p>
+
+
+        <a
+            class="btn"
+            href="https://wa.me/923118497798"
+            target="_blank"
+        >
+            📱 Contact Us on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- BUSINESS INFO -->
+
+<div class="info-bar">
+
+    <div class="info-item">
+
+        <strong>
+            👤 Contact Person
+        </strong>
+
+        <span>
+            Asmatullah Khan
+        </span>
+
+    </div>
+
+
+    <div class="info-item">
+
+        <strong>
+            📍 Address
+        </strong>
+
+        <span>
+            Kemari Town, Hub River Road,
+            Karachi, Pakistan
+        </span>
+
+    </div>
+
+
+    <div class="info-item">
+
+        <strong>
+            📱 WhatsApp
+        </strong>
+
+        <span>
+            03118497798
+        </span>
+
+    </div>
+
+</div>
+
+
+<!-- PRODUCTS -->
+
+<section id="products">
+
+    <div class="section-title">
+
+        <h2>
+            Our Products
+        </h2>
+
+        <p>
+            Wholesale used clothing for international buyers
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                👕
+            </div>
+
+            <h3>
+                Used Clothing
+            </h3>
+
+            <p>
+                Quality second-hand garments prepared
+                for international wholesale markets.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                📦
+            </div>
+
+            <h3>
+                Wholesale Bales
+            </h3>
+
+            <p>
+                Bulk clothing bales for wholesalers,
+                distributors and overseas buyers.
+            </p>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <div class="card-icon">
+                🌍
+            </div>
+
+            <h3>
+                Global Export
+            </h3>
+
+            <p>
+                Export supply from Karachi, Pakistan
+                for international markets.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+    <div class="section-title">
+
+        <h2>
+            About Prime Care International
+        </h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p>
+
+            Prime Care International is a used clothing
+            exporter based in Karachi, Pakistan. We provide
+            wholesale and bulk used clothing for international
+            buyers with a focus on reliable supply and
+            professional service.
+
+        </p>
+
+
+        <div class="about-boxes">
+
+
+            <div class="about-box">
+
+                <strong>
+                    👤
+                </strong>
+
+                Asmatullah Khan
+
+            </div>
+
+
+            <div class="about-box">
+
+                <strong>
+                    📍
+                </strong>
+
+                Karachi, Pakistan
+
+            </div>
+
+
+            <div class="about-box">
+
+                <strong>
+                    🌍
+                </strong>
+
+                International Export
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPORT CTA -->
+
+<section class="export">
+
+    <h2>
+        Ready for International Business?
+    </h2>
+
+
+    <p>
+
+        Contact Prime Care International for
+        wholesale used clothing supply and
+        export inquiries.
+
+    </p>
+
+
+    <a
+        class="btn"
+        href="https://wa.me/923118497798"
+        target="_blank"
+    >
+        📱 Get in Touch
+    </a>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h2>
+        Contact Us
+    </h2>
+
+
+    <p class="owner">
+        Asmatullah Khan
+    </p>
+
+
+    <p>
+
+        📍 Kemari Town, Hub River Road,
+        <br>
+        Karachi, Pakistan
+
+    </p>
+
+
+    <a
+        class="btn"
+        href="https://wa.me/923118497798"
+        target="_blank"
+    >
+        WhatsApp: 03118497798
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    © 2026
+
+    <strong>
+        Prime Care International
+    </strong>
+
+    <br>
+
+    Used Clothing Exporter from Karachi, Pakistan
+
+</footer>
+
+
+</body>
+</html>
